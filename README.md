@@ -6,7 +6,7 @@ Blurb
 
 A command executable exe, that processes AudioSwitcher scripting files. The scripting files are plain old Javascript files, but have support from the automatically available AudioSwitcher Scripting library.
 
-The scripting library provides a full set of functionality allowing Javascript to interact directly with any and all of the available Windows Audio Devices. This could be Speakers, Headphones, Microphones, Digital Outputs etc...
+The scripting library provides a limited set of functionality allowing Javascript to interact directly with any and all of the available Windows Audio Devices. This could be Speakers, Headphones, Microphones, Digital Outputs etc...
 
 
 Scripting Library
