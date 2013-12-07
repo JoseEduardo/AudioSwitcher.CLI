@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AudioSwitcher.CLI</RootNamespace>
-    <AssemblyName>AudioSwitcher.CLI</AssemblyName>
+    <AssemblyName>asc</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,12 +32,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Jurassic, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Jurassic\NET35\Jurassic.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AudioSwitcher.AudioApi\AudioSwitcher.AudioApi\AudioSwitcher.AudioApi.csproj">
+      <Project>{7a4e260c-007e-4615-a92b-e849e7b641ab}</Project>
+      <Name>AudioSwitcher.AudioApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AudioSwitcher.Scripting\AudioSwitcher.Scripting\AudioSwitcher.Scripting.csproj">
+      <Project>{7794300b-f8d3-4c30-ab1c-ffa0c961a510}</Project>
+      <Name>AudioSwitcher.Scripting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Test.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
