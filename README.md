@@ -10,6 +10,23 @@ The scripting library provides a limited set of functionality allowing Javascrip
 
 - - -
 
+Usage
+------
+
+To run and execute a macro script use the following, where inputFile.js is the macro.
+
+```
+ascli.exe inputFile.js
+```
+
+To test/debug any scripts you are creating use the --debug switch. This will result in your Windows System Device being UNAFFECTED by the script. It runs the functions in a "sandbox"
+
+```
+ascli.exe --debug inputFile.js
+```
+
+- - -
+
 Scripting Library
 -------
 
