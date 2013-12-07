@@ -95,6 +95,8 @@ setAsDefaultCommDevice|function||bool|Sets this device as the Default Communcati
 Sample Macro Script
 -------
 
+Sample macro script that demonstrates the usage of some scripting functions.
+
 ```javascript
 //Gets all OUTPUT devices (see the flags arg)
 var devices = AudioSwitcher.getAudioDevices(1);
