@@ -8,6 +8,7 @@ A command executable exe, that processes AudioSwitcher scripting files. The scri
 
 The scripting library provides a limited set of functionality allowing Javascript to interact directly with any and all of the available Windows Audio Devices. This could be Speakers, Headphones, Microphones, Digital Outputs etc...
 
+- - -
 
 Scripting Library
 -------
@@ -19,6 +20,7 @@ Libraries:
 - Core
 - console
 
+- - -
 
 ### console ###
 
@@ -39,6 +41,7 @@ This exposes functionality similar to that seen in the Firebug Console. It allow
     
 See the [Firebug Console API](https://getfirebug.com/wiki/index.php/Console_API) for more details.
 
+- - -
 
 ### Core ###
 
@@ -50,7 +53,7 @@ Member|Type|Arguments (type)|Returns|Description
 :-----|:---|:---------------|:------|:--------
 sleep|function|milliseconds (number)|void|Will force the Scripting engine to pause execution for _at least_ the number of milliseconds specified 
 
-
+- - -
 
 ### AudioSwitcher ###
 
@@ -90,7 +93,7 @@ toggleMute|function||bool|Toggles the mute state of this device. Returns the res
 setAsDefaultDevice|function||bool|Sets this device as the Default Device
 setAsDefaultCommDevice|function||bool|Sets this device as the Default Communcations Device
     
-
+- - -
 
 Sample Macro Script
 -------
