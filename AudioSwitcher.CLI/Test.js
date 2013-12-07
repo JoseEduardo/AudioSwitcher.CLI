@@ -16,6 +16,10 @@ if (defaultDevice !== undefined) {
 
     var vol = defaultDevice.volume();
 
+    //Sets the default device
+    defaultDevice.setAsDefaultDevice();
+    defaultDevice.setAsDefaultCommDevice();
+
     console.log("Current Volume: " + vol);
     console.log("Set Volume To: " + defaultDevice.volume(10));
     Core.sleep(2000);
