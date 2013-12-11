@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using AudioSwitcher.AudioApi;
-using AudioSwitcher.AudioApi.Debug;
+using AudioSwitcher.AudioApi.Isolated;
 using AudioSwitcher.AudioApi.System;
 using AudioSwitcher.Scripting;
 using Jurassic;
@@ -42,7 +42,7 @@ namespace AudioSwitcher.CLI
             AudioContext currentContext;
 
             if(IsDebug)
-                currentContext = new DebugAudioContext();
+                currentContext = new IsolatedAudioContext();
             else
                 currentContext = new SystemAudioContext();
 
